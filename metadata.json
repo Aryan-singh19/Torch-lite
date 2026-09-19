@@ -1,0 +1,6 @@
+{
+  "name": "MyTorch-MNIST-Elite",
+  "description": "Interactive dashboard, neural network visualizer, and live digit classifier for the MyTorch from-scratch deep learning framework and Kaggle MNIST Elite benchmark.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
