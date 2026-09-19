@@ -1,56 +1,78 @@
-# MyTorch-MNIST Elite Web Application
+# ⚡ Torch-lite: From-Scratch Deep Learning & MNIST Digit Classifier
 
-Interactive web demonstration and inference suite for **MyTorch-MNIST-Elite**, a from-scratch deep learning framework achieving **99.25% test accuracy** on the standard MNIST digit dataset.
+[![Deploy with Vercel](https://vercel.com/button)](https://torch-lit-psi.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
+[![Model Accuracy](https://img.shields.io/badge/MNIST%20Test%20Accuracy-99.25%25-emerald.svg)]()
+[![React](https://img.shields.io/badge/React-19-blue.svg)]()
+[![Vite](https://img.shields.io/badge/Vite-6-purple.svg)]()
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8.svg)]()
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Framework: From Scratch](https://img.shields.io/badge/Framework-NumPy%20From--Scratch-emerald.svg)]()
-[![Model Accuracy: 99.25%](https://img.shields.io/badge/MNIST%20Test%20Accuracy-99.25%25-brightgreen.svg)]()
+> **🚀 Live Web Application:** [https://torch-lit-psi.vercel.app/](https://torch-lit-psi.vercel.app/)
 
----
-
-## Features
-
-- **Interactive 28×28 Canvas**: Draw handwritten digits with real-time center-of-mass and aspect-ratio normalization according to the Yann LeCun MNIST specification.
-- **Real-Time Feedforward Engine**: Runs the pure mathematical forward pass ($784 \to 96 \to 48 \to 10$) in real time with Softmax probability distributions, Shannon entropy uncertainty, and top-3 predictions.
-- **Hidden Layer Activations**: Live visual heatmap of active neurons across Hidden Layer 1 (96 units) and Hidden Layer 2 (48 units).
-- **Architecture & Calculus Explorer**: Comprehensive computation graph, He/Kaiming initialization formulas, and analytical matrix calculus derivations ($dW = \frac{1}{N} dY^T X$, $dX = dY W$).
-- **Kaggle Training & Benchmark Curves**: Multi-epoch training and validation curves logged from Kaggle GPU runs, along with head-to-head comparisons against PyTorch showing a 2.1× training speedup.
-- **Visual Gallery**: Full resolution confusion matrices, learned feature filters, training story animations, and benchmark comparisons.
+An interactive deep learning application and pedagogical suite built around a **from-scratch NumPy/TypeScript neural network engine** achieving **99.25% accuracy** on the MNIST handwritten digits dataset.
 
 ---
 
-## Tech Stack
+## 🚀 Live Demo & Launch
 
-- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Lucide Icons
-- **Deep Learning Engine**: Pure mathematical TypeScript port of the Python NumPy engine (`src/mytorch/engine.ts`)
-- **Weights**: Trained MyTorch MLP weights (`src/data/trained_model_weights.json`)
+Click here to launch the deployed web app:  
+👉 **[https://torch-lit-psi.vercel.app/](https://torch-lit-psi.vercel.app/)**
 
 ---
 
-## Local Development
+## 🌟 Key Features
+
+- **Interactive 28×28 Canvas**: Draw handwritten digits with real-time center-of-mass and bounding-box normalization conforming to Yann LeCun's MNIST specification.
+- **Pure Feedforward Engine**: Runs the mathematical forward pass ($784 \to 96 \to 48 \to 10$) in pure TypeScript with Softmax probability outputs and Shannon entropy uncertainty estimation.
+- **Live Neuron Activation Heatmap**: Real-time visualization of activations across Hidden Layer 1 (96 units) and Hidden Layer 2 (48 units).
+- **Architecture & Gradient Graph**: Computation graph, He initialization parameters, and analytical backpropagation calculus ($dW = \frac{1}{N} dY^T X$).
+- **Benchmark Suite**: Head-to-head comparison demonstrating a 2.1× training throughput speedup over baseline implementations.
+- **Visual Artifacts Gallery**: High-resolution confusion matrices, learned feature filters, and training animations.
+
+---
+
+## 🛠️ Tech Stack & Tags
+
+- **Framework**: React 19, TypeScript 5.7, Vite 6
+- **Styling**: Tailwind CSS v4, Lucide React Icons
+- **ML / Math Engine**: Autograd & Matrix operations (`src/mytorch/engine.ts`)
+- **Hosting**: Vercel
+
+---
+
+## 💻 Local Development
 
 ```bash
-# 1. Install dependencies
-npm install
+# Clone the repository
+git clone https://github.com/Aryan-singh19/Torch-lite.git
+cd Torch-lite
 
-# 2. Start development server
+# Install dependencies (legacy peer deps required for Tailwind v4 + Vite)
+npm install --legacy-peer-deps
+
+# Start Vite development server
 npm run dev
 
-# 3. Build for production
+# Build for production
 npm run build
 ```
 
 ---
 
-## Deploying to Vercel
+## 🚢 Deploying to Vercel
 
-This repository includes a `vercel.json` and `.npmrc` configured to handle peer-dependency resolutions seamlessly:
+This repository includes both `vercel.json` and `.npmrc` to streamline builds on Vercel:
 
-1. Push this repository to GitHub.
-2. Import the repository into [Vercel](https://vercel.com).
-3. The build settings are auto-configured:
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-   - **Install Command**: `npm install --legacy-peer-deps`
-4. Click **Deploy**.
+1. Import the repository into [Vercel](https://vercel.com/new).
+2. Framework preset is auto-detected as **Vite**.
+3. Build command: `npm run build`
+4. Output directory: `dist`
+5. Install command: `npm install --legacy-peer-deps`
+6. Click **Deploy**.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.

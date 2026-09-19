@@ -1,8 +1,28 @@
 {
   "name": "torch-lite",
-  "private": true,
   "version": "1.0.0",
+  "description": "Interactive deep learning suite and from-scratch NumPy/TypeScript neural network engine achieving 99.25% accuracy on MNIST",
   "type": "module",
+  "license": "MIT",
+  "author": "Aryan Singh",
+  "homepage": "https://torch-lit-psi.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aryan-singh19/Torch-lite.git"
+  },
+  "keywords": [
+    "deep-learning",
+    "mnist",
+    "neural-network",
+    "autograd",
+    "numpy",
+    "from-scratch",
+    "digit-recognizer",
+    "react-19",
+    "vite",
+    "tailwindcss",
+    "vercel"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

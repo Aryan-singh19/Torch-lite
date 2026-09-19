@@ -56,8 +56,19 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, metrics
           {/* Repository Links */}
           <div className="flex items-center gap-2 text-xs">
             <a
+              id="link-launch-app"
+              href="https://torch-lit-psi.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium shadow-sm transition-colors"
+            >
+              <span>Launch App</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+
+            <a
               id="link-github-repo"
-              href="https://github.com/shiroonigami23-ui/MyTorch-MNIST-Elite"
+              href="https://github.com/Aryan-singh19/Torch-lite"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-zinc-200 bg-zinc-50 hover:bg-zinc-100 text-zinc-700 font-medium transition-colors"
